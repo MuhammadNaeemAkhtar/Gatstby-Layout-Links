@@ -1,3 +1,38 @@
+## STEP 3: Creating nested layout components
+
+- In this part, you’ll learn about Gatsby plugins and creating “layout” components. Gatsby plugins are JavaScript packages that help add functionality to a Gatsby site. Gatsby is designed to be extensible, which means plugins are able to extend and modify just about everything Gatsby does.
+- There are already hundreds of plugins! Explore the Gatsby https://www.gatsbyjs.org/plugins/
+- Typography.js is a JavaScript library which generates global base styles for your site’s typography. The library has a corresponding Gatsby plugin to streamline using it in a Gatsby site.
+
+There are two main steps to using a plugin: Installing and configuring.
+1- Install the gatsby-plugin-typography NPM package. npm install --save gatsby-plugin-typography react-typography typography typography-theme-fairy-gates
+2- Edit the file gatsby-config.js at the root of your project to the following:
+  module.exports = {
+  plugins: [
+    {
+      resolve: `gatsby-plugin-typography`,
+      options: {
+        pathToConfigModule: `src/utils/typography`,
+      },
+    },
+  ],
+}
+
+The gatsby-config.js is another special file that Gatsby will automatically recognize. This is where you add plugins and other site configuration.
+
+3. Typography.js needs a configuration file. Create a new directory called utils in the src directory. Then add a new file called typography.js to utils.
+
+Let’s make a quick improvement. Many sites have a single column of text centered in the middle of the page. To create this, add the following styles "style={{ margin: `3rem auto`, maxWidth: 600 }}" to the <div> in src/pages/index.js.
+
+### Creating layout components
+
+1. add a couple new pages to your project: an about page and a contact page.
+2. 
+
+
+
+## //////////////////////////////////////// AUTO GENERATED /////////////////////////////////
+
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.org">
