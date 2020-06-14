@@ -27,7 +27,7 @@ Let’s make a quick improvement. Many sites have a single column of text center
 ### Creating layout components
 
 1. add a couple new pages to your project: an about page and a contact page.
-2. 
+2. Link them
 
 
 
